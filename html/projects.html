@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PrinceBryan Yanga — OS Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <!-- Instant Theme Loader Script -->
+  <script>
+    var savedEnv = localStorage.getItem('preferred_os_env') || 'cyber';
+    if (savedEnv === 'matrix') {
+      document.body.className = 'theme-matrix';
+    } else if (savedEnv === 'amber') {
+      document.body.className = 'theme-amber';
+    }
+  </script>
+
+  <!-- MATRIX CODE RAIN CANVAS -->
+  <canvas id="matrixCanvas" class="matrix-rain-canvas"></canvas>
+
+  <div class="os-grid"></div>
+  <div class="os-glow"></div>
+
+  <!-- HUD COMMAND SIDEBAR -->
+  <aside class="os-sidebar">
+    <div class="sidebar-top">
+      <a href="index.html" class="os-brand">~/pbryanyanga<span class="cursor">_</span></a>
+      <nav class="sidebar-nav">
+        <a href="index.html"><span>[01]</span> About</a>
+        <a href="projects.html" class="active"><span>[02]</span> Projects</a>
+        <a href="certifications.html"><span>[03]</span> Certifications</a>
+        <a href="contact.html"><span>[04]</span> Contact</a>
+      </nav>
+
+      <!-- ENVIRONMENT SWITCHER WIDGET -->
+      <div class="sidebar-themes">
+        <span class="cat-title">// OS_ENVIRONMENT</span>
+        <div class="theme-buttons">
+          <button class="theme-btn" id="btnCyber" onclick="setEnvironment('cyber')">CYBER</button>
+          <button class="theme-btn" id="btnMatrix" onclick="setEnvironment('matrix')">MATRIX</button>
+          <button class="theme-btn" id="btnAmber" onclick="setEnvironment('amber')">AMBER</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-telemetry">
+      <div class="telemetry-item"><span>SYS_STATUS:</span><span>ONLINE</span></div>
+      <div class="telemetry-item"><span>LOC:</span><span>MARIKINA, PH</span></div>
+      <div class="telemetry-item"><span>BUILD:</span><span>V2.6_OS</span></div>
+    </div>
+  </aside>
+
+  <!-- MAIN WORKSPACE -->
+  <main class="os-workspace">
+    <div class="workspace-content">
+      <section class="os-window">
+        <div class="window-header">
+          <span>~/projects/repository_index.sh</span>
+          <div class="window-dots"><span></span><span></span><span></span></div>
+        </div>
+        <div class="window-body">
+          <span class="window-label">// Repository Archive</span>
+          <h1>Systems &amp; Applications</h1>
+          <p class="school-tag">Hardware microcontrollers, desktop software, educational web platforms, and secure systems built from the ground up.</p>
+        </div>
+      </section>
+
+      <div class="grid-stack">
+        <!-- PROJECT 1 -->
+        <section class="os-window">
+          <div class="window-header">
+            <span>~/projects/elearning_alpha.app</span>
+            <div class="window-dots"><span></span><span></span><span></span></div>
+          </div>
+          <div class="window-body">
+            <div class="project-top-flex">
+              <span class="type-badge cyan">Educational Web System</span>
+              <span class="project-year">July – October 2026</span>
+            </div>
+            <h2 class="project-heading">E-Learning System for English Alphabet</h2>
+            <div class="creator-tag">Created by: PrinceBryan Yanga (Leader), John Raymond Sales (Designer), Julian Montalan (Programmer)</div>
+            <p class="window-text">
+              A modern remote learning web platform built specifically for preschool students as an alternative to traditional face-to-face classes—ensuring academic continuity during inclement weather or safety risks while introducing children to technology early. Features interactive soundboards, student/teacher dashboards, and official PDF report exports.
+            </p>
+            <div class="tech-stack-row">
+              <span>Web Application</span>
+              <span>Interactive Soundboard</span>
+              <span>PDF Report Export</span>
+              <span>Role-Based Access</span>
+              <span>MySQL Database</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROJECT 2 -->
+        <section class="os-window">
+          <div class="window-header">
+            <span>~/projects/arduino_alarm.hw</span>
+            <div class="window-dots"><span></span><span></span><span></span></div>
+          </div>
+          <div class="window-body">
+            <div class="project-top-flex">
+              <span class="type-badge purple">Embedded Hardware</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h2 class="project-heading">Simple Alarm Arduino System</h2>
+            <div class="creator-tag">Created by: PrinceBryan Yanga (Developer) &amp; Nadhir Bobis (Collaborator)</div>
+            <p class="window-text">
+              A short-range detection system designed for small enclosures like drawers, cabinets, or doorways. Powered by a 9V battery for portability, it utilizes an HC-SR04 ultrasonic sensor and an active buzzer with noise-filtering firmware logic.
+            </p>
+            <div class="tech-stack-row">
+              <span>Arduino</span>
+              <span>HC-SR04 Sensor</span>
+              <span>Active Buzzer</span>
+              <span>9V Battery</span>
+              <span>C / C++</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROJECT 3 -->
+        <section class="os-window">
+          <div class="window-header">
+            <span>~/projects/borrowing_system.exe</span>
+            <div class="window-dots"><span></span><span></span><span></span></div>
+          </div>
+          <div class="window-body">
+            <div class="project-top-flex">
+              <span class="type-badge cyan">Capstone Thesis</span>
+              <span class="project-year">2026</span>
+            </div>
+            <h2 class="project-heading">Tools &amp; Equipment Borrowing System with Inventory Menu</h2>
+            <div class="creator-tag">Created by: PrinceBryan Yanga (Developer)</div>
+            <p class="window-text">
+              Offline desktop application built in Python to automate equipment borrowing workflows, monitor real-time stock inventory, and eliminate manual logbook bottlenecks. Validated and evaluated successfully with 50 DIT student respondents.
+            </p>
+            <div class="tech-stack-row">
+              <span>Python</span>
+              <span>Desktop App</span>
+              <span>SQLite</span>
+              <span>DBeaver</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROJECT 4 -->
+        <section class="os-window">
+          <div class="window-header">
+            <span>~/projects/laravel_auth.portal</span>
+            <div class="window-dots"><span></span><span></span><span></span></div>
+          </div>
+          <div class="window-body">
+            <div class="project-top-flex">
+              <span class="type-badge lime">Web Security</span>
+              <span class="project-year">2026</span>
+            </div>
+            <h2 class="project-heading">Role-Based Admin Portal &amp; 2FA Authentication System</h2>
+            <div class="creator-tag">Created by: PrinceBryan Yanga (Developer)</div>
+            <p class="window-text">
+              Custom PHP/Laravel web application featuring multi-step Two-Factor Authentication (2FA), protected routes with browser history prevention, RBAC user management, audit logs, and database backups—tested remotely via ngrok.
+            </p>
+            <div class="tech-stack-row">
+              <span>PHP 8.2</span>
+              <span>Laravel 12</span>
+              <span>MySQL</span>
+              <span>XAMPP</span>
+              <span>Bootstrap</span>
+              <span>ngrok</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer class="os-footer">
+      <p>&copy; 2026 PrinceBryan Yanga &bull; Cyber-OS Architecture Deployed</p>
+    </footer>
+  </main>
+
+  <!-- INTERACTIVE CLI TERMINAL BAR -->
+  <div class="os-cli-dock">
+    <span class="cli-prompt">visitor@pbryanyanga:~$</span>
+    <input type="text" id="cliInput" class="cli-input" placeholder="Type 'help', 'about', 'certs', 'contact'..." autocomplete="off" />
+    <span class="cli-help-hint">[Press Enter to Execute]</span>
+  </div>
+
+  <!-- EXTERNAL JAVASCRIPT SCRIPT LINK -->
+  <script src="../js/script.js"></script>
+</body>
+</html>

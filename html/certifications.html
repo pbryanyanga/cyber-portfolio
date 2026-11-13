@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PrinceBryan Yanga — OS Certifications</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <!-- Instant Theme Loader Script -->
+  <script>
+    var savedEnv = localStorage.getItem('preferred_os_env') || 'cyber';
+    if (savedEnv === 'matrix') {
+      document.body.className = 'theme-matrix';
+    } else if (savedEnv === 'amber') {
+      document.body.className = 'theme-amber';
+    }
+  </script>
+
+  <!-- MATRIX CODE RAIN CANVAS -->
+  <canvas id="matrixCanvas" class="matrix-rain-canvas"></canvas>
+
+  <div class="os-grid"></div>
+  <div class="os-glow"></div>
+
+  <!-- HUD COMMAND SIDEBAR -->
+  <aside class="os-sidebar">
+    <div class="sidebar-top">
+      <a href="index.html" class="os-brand">~/pbryanyanga<span class="cursor">_</span></a>
+      <nav class="sidebar-nav">
+        <a href="index.html"><span>[01]</span> About</a>
+        <a href="projects.html"><span>[02]</span> Projects</a>
+        <a href="certifications.html" class="active"><span>[03]</span> Certifications</a>
+        <a href="contact.html"><span>[04]</span> Contact</a>
+      </nav>
+
+      <!-- ENVIRONMENT SWITCHER WIDGET -->
+      <div class="sidebar-themes">
+        <span class="cat-title">// OS_ENVIRONMENT</span>
+        <div class="theme-buttons">
+          <button class="theme-btn" id="btnCyber" onclick="setEnvironment('cyber')">CYBER</button>
+          <button class="theme-btn" id="btnMatrix" onclick="setEnvironment('matrix')">MATRIX</button>
+          <button class="theme-btn" id="btnAmber" onclick="setEnvironment('amber')">AMBER</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-telemetry">
+      <div class="telemetry-item"><span>SYS_STATUS:</span><span>ONLINE</span></div>
+      <div class="telemetry-item"><span>LOC:</span><span>MARIKINA, PH</span></div>
+      <div class="telemetry-item"><span>BUILD:</span><span>V2.6_OS</span></div>
+    </div>
+  </aside>
+
+  <!-- MAIN WORKSPACE -->
+  <main class="os-workspace">
+    <div class="workspace-content">
+      <section class="os-window">
+        <div class="window-header">
+          <span>~/credentials/verify_certs.key</span>
+          <div class="window-dots"><span></span><span></span><span></span></div>
+        </div>
+        <div class="window-body">
+          <span class="window-label">// Verified Credentials</span>
+          <h1>Certifications</h1>
+          <p class="school-tag">Industry coursework and networking credentials issued through Cisco Networking Academy.</p>
+        </div>
+      </section>
+
+      <section class="os-window">
+        <div class="window-header">
+          <span>~/credentials/active_list.dat</span>
+          <div class="window-dots"><span></span><span></span><span></span></div>
+        </div>
+        <div class="window-body">
+          <div class="cert-grid">
+            <!-- CERT 1 -->
+            <div class="cert-item-card">
+              <div class="cert-thumb" onclick="openModal('../certificate/CCNA-_Switching-_Routing-_and_Wireless_Essentials_certificate_July 9 2026.jpg', 'CCNA: Switching, Routing, and Wireless Essentials')">
+                <img src="../certificate/CCNA-_Switching-_Routing-_and_Wireless_Essentials_certificate_July 9 2026.jpg" alt="CCNA Switching, Routing, and Wireless Essentials" />
+              </div>
+              <div>
+                <span class="cert-name">CCNA: Switching, Routing, and Wireless Essentials</span>
+                <span class="cert-org">Cisco Networking Academy</span>
+              </div>
+              <span class="cert-date">Jul 2026</span>
+            </div>
+
+            <!-- CERT 2 -->
+            <div class="cert-item-card">
+              <div class="cert-thumb" onclick="openModal('../certificate/CCNA-_Introduction_to_Networks_certificate_Dec 3 2025.jpg', 'CCNA: Introduction to Networks')">
+                <img src="../certificate/CCNA-_Introduction_to_Networks_certificate_Dec 3 2025.jpg" alt="CCNA Introduction to Networks" />
+              </div>
+              <div>
+                <span class="cert-name">CCNA: Introduction to Networks</span>
+                <span class="cert-org">Cisco Networking Academy</span>
+              </div>
+              <span class="cert-date">Dec 2025</span>
+            </div>
+
+            <!-- CERT 3 -->
+            <div class="cert-item-card">
+              <div class="cert-thumb" onclick="openModal('../certificate/Introduction_to_Cybersecurity_certificate_Dec 03.2024.jpg', 'Introduction to Cybersecurity')">
+                <img src="../certificate/Introduction_to_Cybersecurity_certificate_Dec 03.2024.jpg" alt="Introduction to Cybersecurity" />
+              </div>
+              <div>
+                <span class="cert-name">Introduction to Cybersecurity</span>
+                <span class="cert-org">Cisco Networking Academy</span>
+              </div>
+              <span class="cert-date">Dec 2024</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="os-footer">
+      <p>&copy; 2026 PrinceBryan Yanga &bull; Cyber-OS Architecture Deployed</p>
+    </footer>
+  </main>
+
+  <!-- CERTIFICATE PREVIEW MODAL CONTAINER -->
+  <div id="certModal" class="modal-overlay" style="display: none;">
+    <div class="modal-window">
+      <div class="modal-header">
+        <span id="modalTitle">~/credentials/preview.key</span>
+        <button class="modal-close-btn" onclick="closeModal()">[X] CLOSE</button>
+      </div>
+      <div class="modal-body">
+        <img id="modalImg" src="" alt="Enlarged Certificate" />
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE CLI TERMINAL BAR -->
+  <div class="os-cli-dock">
+    <span class="cli-prompt">visitor@pbryanyanga:~$</span>
+    <input type="text" id="cliInput" class="cli-input" placeholder="Type 'help', 'about', 'projects', 'contact'..." autocomplete="off" />
+    <span class="cli-help-hint">[Press Enter to Execute]</span>
+  </div>
+
+  <!-- EXTERNAL JAVASCRIPT SCRIPT LINK -->
+  <script src="../js/script.js"></script>
+</body>
+</html>
