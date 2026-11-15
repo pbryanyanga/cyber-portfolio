@@ -90,20 +90,45 @@
 
       <!-- SPLIT WINDOWS: EXPANDED BACKGROUND & STACK -->
       <div class="grid-2col">
-        <section class="os-window">
-          <div class="window-header">
-            <span>~/profile/background.md</span>
-            <div class="window-dots"><span></span><span></span><span></span></div>
-          </div>
-          <div class="window-body">
-            <span class="window-label">// System Profile &amp; Objectives</span>
-            <p class="window-text" style="margin-bottom: 1rem;">
-           <p>
-  <p>
-  Versatile developer and Bachelor of Science in Information Technology (BSIT) student at <strong>IETI College of Science and Technology, Marikina Campus</strong>, specializing in backend web architecture, modern development frameworks, relational database management, and robust systems engineering. Focused on designing scalable backend infrastructures and secure application logic to handle complex digital environments.<br><br>
-  Passionate about bridging technical execution with practical operational needs—translating complex requirements into clean, high-performance software solutions, automated workflows, and maintainable codebases. Committed to continuous learning, rigorous testing methodologies, and building dependable tools that optimize system efficiency.
-</p>
-        </section>
+        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+          <section class="os-window">
+            <div class="window-header">
+              <span>~/profile/background.md</span>
+              <div class="window-dots"><span></span><span></span><span></span></div>
+            </div>
+            <div class="window-body">
+              <span class="window-label">// System Profile &amp; Objectives</span>
+              <p class="window-text">
+                Versatile developer and Bachelor of Science in Information Technology (BSIT) student at <strong>IETI College of Science and Technology, Marikina Campus</strong>, specializing in backend web architecture, modern development frameworks, relational database management, and robust systems engineering. Focused on designing scalable backend infrastructures and secure application logic to handle complex digital environments.<br><br>
+                Passionate about bridging technical execution with practical operational needs—translating complex requirements into clean, high-performance software solutions, automated workflows, and maintainable codebases. Committed to continuous learning, rigorous testing methodologies, and building dependable tools that optimize system efficiency.
+              </p>
+            </div>
+          </section>
+
+          <!-- CODETIME TELEMETRY WINDOW -->
+          <section class="os-window">
+            <div class="window-header">
+              <span>~/telemetry/codetime.sh</span>
+              <div class="window-dots"><span></span><span></span><span></span></div>
+            </div>
+            <div class="window-body">
+              <span class="window-label">// Live Development Telemetry (30-Day Metrics)</span>
+              <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; margin-top: 1rem;">
+                <img 
+                  src="https://shields.jannchie.com/endpoint?style=flat-square&color=2ea44f&url=https%3A%2F%2Fapi.codetime.dev%2Fv3%2Fusers%2Fshield%3Fuid%3D37884" 
+                  alt="CodeTime Total Hours"
+                />
+                <a href="https://codetime.dev" target="_blank" rel="noopener noreferrer">
+                  <img 
+                    src="https://codetime.dev/api/widgets/donut.svg?uid=37884&days=30&limit=6&theme=dark" 
+                    alt="CodeTime Language Breakdown" 
+                    style="max-width: 100%; height: auto;"
+                  />
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
 
         <section class="os-window">
           <div class="window-header">
